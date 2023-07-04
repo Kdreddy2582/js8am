@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoped Variable</title>
+  </head>
+  <body>
+    <h1>Function level Scope</h1>
+    <h1>Block level Scope</h1>
+    <h2>
+      <li>Var --> Function level Scope</li>
+      <li>Let --> Block level Scope</li>
+      <li>Const --> Block level Scope</li>
+    </h2>
+    <script>
+      // function hello() {
+      //   if (true) {
+      //     var myName = "<h1>Deva</h1>";
+      //   }
+      //   document.write(myName);
+      // }
+      // hello();
+
+      function hello() {
+        if (true) {
+          let myName = "<h1>Deva</h1>";
+          document.write(myName);
+        }
+        //document.write(myName);
+      }
+      hello();
+
+      // function hello() {
+      //   if (true) {
+      //     const myName = "<h1>Deva</h1>";
+      //     document.write(myName);
+      //   }
+      //   //document.write(myName);
+      // }
+      // hello();
+
+      //var isGlobal = "This is Global variable ";
+      //let firstName = "Hello world";
+    </script>
+  </body>
+</html>

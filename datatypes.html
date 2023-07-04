@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="background-color: #dbdbdb; margin: 50px 100px; padding: 20px 50px;"
+    >
+      <h1>Datatypes in JavaScript</h1>
+      <ol style="font-size: 30px;">
+        <li>
+          Primitive Datatypes
+          <ul>
+            <li>Number</li>
+            <li>String</li>
+            <li>Boolean</li>
+          </ul>
+        </li>
+        <li>
+          Special Datatypes
+          <ul>
+            <li>Undefind</li>
+            <li>Null</li>
+          </ul>
+        </li>
+        <li>
+          Composite Dtatypes
+          <ul>
+            <li>Array</li>
+            <li>Object</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div style="color: #950303; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: Number Datatype
+            var a = 25;
+            document.write(typeOf (a))
+            document.write(a)
+          </pre>
+        </code>
+      </div>
+
+      <div style="color: #3303ab; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: String Datatype
+            var b = "Devender";
+            document.write(typeOf (b))
+            document.write(b)
+          </pre>
+        </code>
+      </div>
+      <div style="color: #c9037d; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: Boolean Datatype
+            var c = true;
+            document.write(typeOf (c))
+            document.write(c)
+          </pre>
+        </code>
+      </div>
+
+      <div style="color: #036e2a; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: Undefind Datatype
+            var d;
+            document.write(typeOf (d))
+            document.write(d)
+          </pre>
+        </code>
+      </div>
+
+      <div style="color: #04397a; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: Null Datatype
+            var e = null;
+            document.write(typeOf (e))
+            document.write(e)
+          </pre>
+        </code>
+      </div>
+      <div style="color: #a90505; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: Array Datatype
+            var names = ["Deva", "Teja", "Bhavani"];
+            document.write(typeOf (e))
+            document.write(e)
+          </pre>
+        </code>
+      </div>
+      <hr />
+      <div style="color: #f09d03; font-size: 25px;">
+        <code>
+          <pre>
+            Syntax: Object Datatype
+            var obj = {"Name":"Deva", "Salary": 90000, "Location": "Hyderabad"};
+            document.write(typeOf (obj))
+            document.write(obj)
+          </pre>
+        </code>
+      </div>
+      <hr />
+
+      <script>
+        //Syntax: Number Datatype
+        var a = 25;
+        document.write("<h1>" + typeof a + "</h1>");
+        document.write(a);
+
+        //Syntax: String Datatype
+        document.write("<hr>");
+        var b = "Devender";
+        document.write("<h1>" + typeof b + "</h1>");
+        document.write(b);
+
+        //Syntax: Boolean Datatype
+        document.write("<hr>");
+        var c = false;
+        document.write("<h1>" + typeof c + "</h1>");
+        document.write(c);
+
+        //Syntax: Undefind Datatype
+        document.write("<hr>");
+        var d;
+        document.write("<h1>" + typeof d + "</h1>");
+        document.write(d);
+        console.log(d);
+
+        //Syntax: Null Datatype
+        document.write("<hr>");
+        var e = null;
+        document.write("<h1>" + typeof e + "</h1>");
+        document.write(e);
+        console.log(e);
+
+        //Syntax: Array Datatype
+        document.write("<hr>");
+        var names = ["Deva", "Teja", "Bhavani"];
+        document.write("<h1>" + typeof names + "</h1>");
+        document.write(names);
+        console.log(names);
+
+        //Syntax: Array Datatype
+        document.write("<hr>");
+        var obj = { firstName: "Deva", Salary: 90000, Location: "Hyderabad" };
+        document.write("<h1>" + typeof obj + "</h1>");
+        document.write(
+          obj.firstName + "<br>" + obj.Salary + "<br>" + obj.Location
+        );
+        console.log(obj);
+
+        document.write("<hr>");
+        var students = [
+          { stuName: "Dugra", Class: "9th class", age: 14 },
+          { stuName: "Ramana", Class: "10th class", age: 15 },
+          { stuName: "Ramesh", Class: "8th class", age: 13 },
+          { stuName: "Ramya", Class: "6th class", age: 12 },
+        ];
+        console.log(students);
+      </script>
+    </div>
+  </body>
+</html>

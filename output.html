@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.log("I am from Javascript");
+    </script>
+    <script>
+      document.write("<h1>I am from Javascript</h1>");
+    </script>
+    <script>
+      alert("I am from Alert Javascript");
+    </script>
+  </head>
+  <body>
+    <h1 id="innerDisplay"></h1>
+
+    <button onclick="document.getElementById('clickMe').style.display='none'">
+      Hide the text
+    </button>
+    <h3 id="clickMe">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo maxime
+      vel necessitatibus at eum qui cumque error quos nesciunt nihil laudantium
+      est veritatis corporis illum, exercitationem illo quis sequi voluptate.
+    </h3>
+
+    <div id="changeContent" style="font-size: 23px;">Change the text</div>
+    <h4
+      onclick="document.getElementById('changeContent').innerHTML = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit'"
+    >
+      Click me...
+    </h4>
+
+    <!-- 
+      JavaScript Display Possibilities
+        1) document.write("Message");
+        2) innerHTML ="Message";
+        3) window.alert("Message")
+        4) console.log("Message");
+     -->
+    <script>
+      document.getElementById("innerDisplay").innerHTML =
+        "I am from innetHTML Javascript";
+      console.log("Hello");
+    </script>
+  </body>
+</html>

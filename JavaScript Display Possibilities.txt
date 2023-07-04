@@ -1,0 +1,9 @@
+JavaScript Display Possibilities
+1) document.write("Message");
+2) innerHTML ="Message";
+3) window.alert("Message")
+4) console.log("Message");
+
+<script>
+  //window.alert("fwestrew");
+</script>

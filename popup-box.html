@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Box</title>
+  </head>
+  <body>
+    <h1>Popup Boxes in JAVASCRIPT</h1>
+    <h3>
+      <ol>
+        <li>Alert Box ==> Syntax: window.alert("")</li>
+        <li>Confirm Box ==> Syntax: window.confirm("")</li>
+        <li>Prompt Box ==> Syntax: window.confirm(“title”, [default])</li>
+      </ol>
+    </h3>
+    <script>
+      //window.alert("I am from Alert Box in Javascript");
+      //alert("I am from Alert Box in Javascript");
+
+      //window.confirm("Aru sure do you want delete the message?");
+      //let isDelete = confirm("Aru sure do you want delete the message?");
+      //alert(isDelete);
+
+      //window.prompt("How old are you?");
+      let age = prompt("How old are you?", 100);
+      window.alert(`Your age is ${age} years old`);
+    </script>
+  </body>
+</html>
