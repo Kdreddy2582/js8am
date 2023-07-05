@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary Operators</title>
+  </head>
+  <body>
+    <div style="margin: 50px 80px; padding: 25px; background-color: #dfdfdf;">
+      <h1>Ternary Operators in Javascript</h1>
+
+      <code style="color: #b60303; font-size: 30px;">
+        <pre>
+          Syntax:
+          var a = 9;
+          var b = 10;
+          Condition? expression1 : expression2
+          Ex: bigValue = a>b ? a:b;`
+        </pre>
+      </code>
+      <hr />
+      <script>
+        var a = 11;
+        var b = 12;
+        // document.write(a < b);
+        // document.write("<br>");
+        var bigValue = a > b ? a : b;
+        document.write(bigValue);
+        a > b
+          ? document.write(" a is big value")
+          : document.write(" b is big value");
+      </script>
+    </div>
+  </body>
+</html>

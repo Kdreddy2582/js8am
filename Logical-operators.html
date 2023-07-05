@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="margin: 50px 80px; padding: 25px; background-color: #dfdfdf;">
+      <h1>Logical Operators in Javascript ( && = and, || = or, ! = Not )</h1>
+      <code>
+        <pre>
+          && True if both are true
+          || True of either or both are True
+          !  True if a is false
+        </pre>
+      </code>
+
+      <script>
+        var a = 4;
+        var b = 5;
+        var c = 6;
+        var d = 3;
+        var e = true;
+        var f = false;
+
+        //&& Operator
+        document.write("&& = (And) ==> Operator");
+        document.write("<hr>");
+        document.write(a < b); //true
+        document.write("<br>");
+        document.write(b < c); //true
+        document.write("<br>");
+        document.write(b < d); //false
+        document.write("<br>");
+        document.write(a < b && b < c); //true
+        document.write("<br>");
+        document.write(a < b && b < d); //false
+        document.write("<hr>");
+
+        //Or Operator
+        document.write("|| = (Or) ==> Operator");
+        document.write("<br>");
+        document.write(a < b || b < d); //true
+        document.write("<hr>");
+
+        //! Operator
+        document.write("! = (Not) ==> Operator");
+        document.write("<br>");
+        document.write("e valse is" + " " + !e); //false
+        document.write("<br>");
+        document.write("f valse is" + " " + !f); //true
+      </script>
+    </div>
+  </body>
+</html>
