@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="margin: 50px 80px; padding: 25px; background-color: #dfdfdf;">
+      <h1>Conditional Statements</h1>
+      <div style="color: #b60303; font-size: 20px;">
+        <h1>
+          <ol>
+            <li>if Statement</li>
+            <li>if else Statement</li>
+            <li>if, else if, else Statement</li>
+            <li>Swith Statement</li>
+          </ol>
+        </h1>
+      </div>
+      <div style="color: #0f5602; font-size: 20px;">
+        <h2>
+          <code>
+            <pre>
+              Syntax: if Statement
+              if (condition){
+                //.........
+              }
+            </pre>
+          </code>
+        </h2>
+      </div>
+      <div style="color: #560232; font-size: 20px;">
+        <h2>
+          <code>
+            <pre>
+              Syntax: if else Statement
+              if (condition){
+                //.........
+              }
+              else{
+                //........
+              }
+            </pre>
+          </code>
+        </h2>
+      </div>
+
+      <script>
+        // let year = prompt("Which year was ES6 interdused!", "");
+        // if (year == 2015) {
+        //   alert("yes you right");
+        // }
+
+        // let year = prompt("Which year was ES6 interdused!", "");
+        // if (year == 2015) {
+        //   alert("Yes your right");
+        // } else {
+        //   alert("No your Wrong");
+        // }
+
+        var balance = 10000;
+        var amount = prompt("Enter a amount to transfer");
+        if (amount < balance) {
+          alert("befor deduction balance: " + balance);
+          balance = balance - amount;
+          alert("Deduction successfully");
+          alert("Before deduction balance:" + balance);
+        } else {
+          alert(
+            "Your balance is:" + balance + "enter amount less than you balance"
+          );
+        }
+      </script>
+    </div>
+  </body>
+</html>
