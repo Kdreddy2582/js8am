@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>For in Loop in javascript</h1>
+    <pre>
+    <code>
+      Syntax:
+      var fruits = [banana, apple, mango, kiwi]
+      for(for in items){
+        //code exicution
+      }
+    </code>
+  </pre>
+
+    <script>
+      var fruits = ["Apple", "Banana", "Mango", "Kiwi", "Suppota"];
+      //for in loop
+      for (fruit in fruits) {
+        //document.write(x); //o/p ==> 0123
+        document.write("<h1>" + fruit + ":" + fruits[fruit] + "<h1>");
+      }
+
+      //For loop
+      // for (index = 0; index <= fruits.length; index++) {
+      //   document.write(index + ":" + fruits[index] + "<br>");
+      // }
+    </script>
+  </body>
+</html>
