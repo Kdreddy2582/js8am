@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      <ol>
+        <li>Object Literal</li>
+        <li>Using a new keyword with object constructor</li>
+        <li>Using a new keyword with a constructor function</li>
+        <li>Object.create() method</li>
+        <li>classes</li>
+      </ol>
+    </h1>
+    <h2>Using Object Literal nutation:</h2>
+    <h3>
+      <ol>
+        <li>
+          Object is the collection of elements in the form of properties and
+          Methods.
+        </li>
+        <li>Property is a key-value pair</li>
+      </ol>
+    </h3>
+    <h1>
+      <pre>
+        <code>
+          Syntax:
+            let movie = {}//create an empty object
+            EX: let movie = {
+                name: ‘Akhanda’,
+                hero: ‘Balakrishna’,
+                releaseDate: 2021
+              }
+              document.write(movie.name + movie.hero + movie.releaseDate)
+
+        </code>
+      </pre>
+    </h1>
+    <div
+      style="font-size: 36px; background-color: #c2c2c2; padding: 20px 15%; color: #9d0505"
+    >
+      <script>
+        let movie = {
+          movieName: "Akhanda",
+          hero: "Balakrishna",
+          realseDate: 2021,
+        };
+        //console.log(movie);
+        // document.write(
+        //   movie.movieName + "<br>" + movie.hero + "<br>" + movie.realseDate
+        // );
+        //let movieName = "movieName";
+        //document.write(movie[movieName]);
+        document.write(movie["movieName"]);
+        document.write("<br>");
+        document.write(movie["hero"]);
+        //add new properties to object
+        document.write("<br>");
+        movie.budget = "100 Crores";
+        document.write(movie.budget);
+      </script>
+    </div>
+  </body>
+</html>
