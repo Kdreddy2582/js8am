@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .product-small-img img {
+        height: 90px;
+        width: 110px;
+        margin: 10px;
+        cursor: pointer;
+        display: block;
+        opacity: 0.6;
+      }
+      .product-small-img img:hover {
+        opacity: 1;
+      }
+      .product-small-img {
+        float: left;
+      }
+
+      .product {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+      }
+      .img-container img {
+        height: 400px;
+      }
+      .img-container {
+        float: right;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product">
+      <div class="product-small-img">
+        <img src="images/1.jpg" alt="" onclick="myFunction(this)" />
+        <img src="images/2.jpg" alt="" onclick="myFunction(this)" />
+        <img src="images/3.jpg" alt="" onclick="myFunction(this)" />
+        <img src="images/4.jpg" alt="" onclick="myFunction(this)" />
+        <img src="images/5.jpg" alt="" onclick="myFunction(this)" />
+        <img src="images/6.jpg" alt="" onclick="myFunction(this)" />
+      </div>
+      <div class="img-container">
+        <img id="imageBox" src="images/1.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+      function myFunction(smallImg) {
+        let fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+      }
+    </script>
+  </body>
+</html>
