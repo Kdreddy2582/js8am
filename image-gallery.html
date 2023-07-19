@@ -9,6 +9,10 @@
         margin: 0;
         padding: 0;
       }
+      #scroll-1::-webkit-scrollbar {
+        /* width: 0px; */
+        display: none;
+      }
       .product-small-img img {
         height: 90px;
         width: 110px;
@@ -22,12 +26,14 @@
       }
       .product-small-img {
         float: left;
+        height: 410px;
+        overflow-y: auto;
       }
 
       .product {
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -40%);
         position: absolute;
       }
       .img-container img {
@@ -37,18 +43,39 @@
         float: right;
         padding: 10px;
       }
+      .varicle-gallery {
+        height: 450px;
+        width: 130px;
+        /* border: 1px solid; */
+        float: left;
+      }
+      #upArrow {
+        display: flex;
+        margin: 5px auto;
+        cursor: pointer;
+      }
+      #downArrow {
+        display: flex;
+        margin: 5px auto;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div class="product">
-      <div class="product-small-img">
-        <img src="images/1.jpg" alt="" onclick="myFunction(this)" />
-        <img src="images/2.jpg" alt="" onclick="myFunction(this)" />
-        <img src="images/3.jpg" alt="" onclick="myFunction(this)" />
-        <img src="images/4.jpg" alt="" onclick="myFunction(this)" />
-        <img src="images/5.jpg" alt="" onclick="myFunction(this)" />
-        <img src="images/6.jpg" alt="" onclick="myFunction(this)" />
+      <div class="varicle-gallery">
+        <img src="images/up-arrow.png" width="25" id="upArrow" />
+        <div class="product-small-img" id="scroll-1">
+          <img src="images/1.jpg" alt="" onclick="myFunction(this)" />
+          <img src="images/2.jpg" alt="" onclick="myFunction(this)" />
+          <img src="images/3.jpg" alt="" onclick="myFunction(this)" />
+          <img src="images/4.jpg" alt="" onclick="myFunction(this)" />
+          <img src="images/5.jpg" alt="" onclick="myFunction(this)" />
+          <img src="images/6.jpg" alt="" onclick="myFunction(this)" />
+        </div>
+        <img src="images/down-arrow.png" width="25" id="downArrow" />
       </div>
+
       <div class="img-container">
         <img id="imageBox" src="images/1.jpg" alt="" />
       </div>
@@ -57,6 +84,21 @@
       function myFunction(smallImg) {
         let fullImg = document.getElementById("imageBox");
         fullImg.src = smallImg.src;
+        let scrollContainer = document.querySelector(".product-small-img");
+        let upArrow = document.getElementById("upArrow");
+        let downArrow = document.getElementById("downArrow");
+        scrollContainer.addEventListener("wheel", (evt) => {
+          evt.preventDefault();
+          scrollContainer.scrollTop += evt.deltaY;
+        });
+        upArrow.addEventListener("click", () => {
+          //scrollContainer.style.ScrollBehavior = "smooth";
+          scrollContainer.scrollTop += 400;
+        });
+        downArrow.addEventListener("click", () => {
+          //scrollContainer.style.ScrollBehavior = "smooth";
+          scrollContainer.scrollTop -= 400;
+        });
       }
     </script>
   </body>
