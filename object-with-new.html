@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="font-size: 26px; background-color: #c2c2c2; padding: 20px 15%; color: #9d0505"
+    >
+      <h1>Using a New keyword with object constructor</h1>
+      <pre>
+        <code>
+          Syntax: let movie1 = new Object();
+        </code>
+    </pre>
+    </div>
+    <script>
+      let movie1 = new Object();
+      console.log(movie1);
+      movie1.budget = "100 crores";
+      console.log(movie1);
+      movie1.directorName = "Rajmouli";
+      console.log(movie1);
+      movie1.movieName = "Legenda";
+      console.log(movie1);
+      movie1["releaseDate"] = 2015;
+      console.log(movie1);
+    </script>
+  </body>
+</html>

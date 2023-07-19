@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      style="font-size: 26px; background-color: #c2c2c2; padding: 20px 15%; color: #9d0505"
+    >
+      <h1>Using a new keyword with a constructor function</h1>
+      <h2>Step 1: Create constructor function:</h2>
+      <h2>Step 2: Create object with constructor function call:</h2>
+      <pre>
+        <code>
+          Syntax: function users(name, age, place){
+            //------
+
+          }
+        </code>
+    </pre>
+      <script>
+        //Step 1: Create constructor function:
+        function users(n, a, p) {
+          this.name = n;
+          this.age = a;
+          this.place = p;
+          this.login = function() {
+            document.write(
+              "Hello: " + " " + this.name + " " + "Loged in successfully"
+            );
+          };
+        }
+        //Step 2: Create object with constructor function call:
+        let user1 = new users("Devdender", "40", "Srikakulam");
+        //console.log(user1);
+        let user2 = new users("Raveendra", "30", "Hyderabad");
+        //console.log(user2);
+        let user3 = new users("Haritha", "35", "Vizag");
+        // console.log(user3);
+        // user3.phoneNo = 8106972793;
+        // console.log(user3);
+        user3.login();
+        document.write("<br>");
+        user1.login();
+        document.write("<br>");
+        user2.login();
+      </script>
+    </div>
+  </body>
+</html>
