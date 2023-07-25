@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Set and Get method</h1>
+    <script>
+      class studentsDate {
+        constructor(name, age, address) {
+          this.stuName = name;
+          this.stuAge = age;
+          this.stuAddress = address;
+        }
+        set stuMarksSet(marks) {
+          if (marks <= 0) {
+            alert("Student marks can not be less than 0");
+          } else {
+            this.stuMarks = marks;
+          }
+        }
+        get getAddress() {
+          //return "Student Address:" + this.stuAddress;
+          return "Student Address:" + this.stuAddress + "" + this.stuAge;
+        }
+      }
+      let ramu = new studentsDate("Ramu", 21, "Srikakaulam");
+      let raju = new studentsDate("Raju", 23, "Visakhapatnam");
+      //console.log(ramu);
+    </script>
+  </body>
+</html>
