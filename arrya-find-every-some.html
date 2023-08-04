@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrya Find Every Some Filter</title>
+  </head>
+  <body>
+    <h2>
+      <li>Find menthod is call back function</li>
+      <li>
+        Its return the first element of array for which call back function
+        returns true
+      </li>
+
+      <pre>
+        <code>
+          Syntax:
+          places = []
+          let place = places.find(function(ele){
+            return ele.startsWith("V")
+          })
+        </code>
+      </pre>
+    </h2>
+    <script>
+      let places = [
+        "Hyderabad",
+        "Guntur",
+        "Vizag",
+        "Vizainagaram",
+        "Vijaywada",
+        "Tamilnadu",
+        "Thirupati",
+      ];
+
+      // let place = places.find(function(ele) {
+      //   return ele.startsWith("V");
+      // });
+      // document.write(place);
+
+      //Array Filter call Back function
+      // let place = places.filter(function(ele) {
+      //   return ele.startsWith("V");
+      // });
+      // document.write(place);
+
+      //Array some call Back function
+      // let place = places.some(function(ele) {
+      //   return ele.startsWith("d");
+      // });
+      // document.write(place);
+
+      //Array Every call Back function
+      // marks = [55, 45, 65, 75, 85, 76];
+      // let pass = marks.every(function(mark) {
+      //   return mark > 35;
+      // });
+      // document.write(pass);
+
+      marks = [25, 45, 65, 75, 85, 76];
+      let pass = marks.every(function(mark) {
+        return mark > 35;
+      });
+      document.write(pass);
+    </script>
+  </body>
+</html>
