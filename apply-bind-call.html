@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Call Bind -- call back methods</title>
+  </head>
+  <body>
+    <h1>Apply Call Bind -- call back methods</h1>
+
+    <script>
+      // // Window Object
+      // var salary = 5000;
+      // function getSalary(a, b) {
+      //   //console.log(salary);
+      //   console.log(this.salary);
+      //   //console.log(window.salary);
+      //   console.log(a, b);
+      // }
+      // // var obj = {};
+      // // console.log(window);
+      // //getSalary();
+
+      // employee1 = {
+      //   salary: 10000,
+      // };
+      // employee2 = {
+      //   salary: 20000,
+      // };
+      // employee3 = {
+      //   salary: 30000,
+      // };
+      // getSalary.call(employee1, 50, 60);
+      // getSalary.apply(employee2, [80, 90]);
+      // var func1 = getSalary.bind(employee3, 100, 100);
+      // func1();
+
+      // Custom Object
+      var customObejct = {
+        salary: 10000,
+        getSalary: function(a, b) {
+          console.log(this.salary);
+          console.log(a, b);
+        },
+      };
+      //customObejct.getSalary();
+
+      employee1 = {
+        salary: 10000,
+      };
+      employee2 = {
+        salary: 20000,
+      };
+      employee3 = {
+        salary: 30000,
+      };
+
+      customObejct.getSalary.call(employee1, 50, 60);
+      customObejct.getSalary.apply(employee2, [80, 90]);
+      var func1 = customObejct.getSalary.bind(employee3, 100, 100);
+      func1();
+    </script>
+  </body>
+</html>
