@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <select id="mySelect" onchange="myOnChange()">
+      <option value="">Select City</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Guntur">Guntur</option>
+      <option value="Vizag">Vizag</option>
+      <option value="Srikakulam">Srikakulam</option>
+    </select>
+    <h2 id="demo"></h2> -->
+    <input
+      type="text"
+      name="txt"
+      value="Deva"
+      onchange="myOnChange(this.value)"
+    />
+    <script>
+      // function myOnChange() {
+      //   let selectCity = document.getElementById("mySelect").value;
+      //   document.getElementById("demo").innerHTML =
+      //     "Your selected city:" + selectCity;
+      // }
+      function myOnChange(val) {
+        alert("The input value has changed. the new value is: " + val);
+      }
+    </script>
+  </body>
+</html>

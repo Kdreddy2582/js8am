@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript Local Storage and Session Storage</h2>
+    <table border="1" cellpadding="10" cellspacing="0" width="50%">
+      <tr>
+        <th></th>
+        <th>Local Storage</th>
+        <th>Session Storage</th>
+      </tr>
+      <tr>
+        <td>Capacity</td>
+        <td>10mb</td>
+        <td>5mb</td>
+      </tr>
+      <tr>
+        <td>Browser</td>
+        <td>HTML 5</td>
+        <td>HTML 5</td>
+      </tr>
+      <tr>
+        <td>Accessible From</td>
+        <td>Any Window</td>
+        <td>Same Tab</td>
+      </tr>
+      <tr>
+        <td>Expire</td>
+        <td>Never</td>
+        <td>On Tab Close</td>
+      </tr>
+      <tr>
+        <td>Storage Location</td>
+        <td>Browser Only</td>
+        <td>Broser Only</td>
+      </tr>
+    </table>
+
+    <h2 id="localStorageDemo"></h2>
+    <h2 id="SessionStorageDemo"></h2>
+    <script>
+      //localStorage.setItem("name", "Devender");
+      document.getElementById(
+        "localStorageDemo"
+      ).innerHTML = localStorage.getItem("name");
+
+      //sessionStorage.setItem("name1", "Devender Reddy");
+      document.getElementById(
+        "SessionStorageDemo"
+      ).innerHTML = sessionStorage.getItem("name1");
+    </script>
+  </body>
+</html>

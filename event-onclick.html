@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript OnClick Event</h1>
+    <button>Click Me</button>
+    <input
+      type="button"
+      value="Click Here"
+      onclick="alert('Hello OnClick Event')"
+    />
+
+    <h2 id="demo"></h2>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+      Check The Date
+    </button>
+
+    <script>
+      var btn = document.querySelector("h1");
+      btn.onclick = function() {
+        //document.write("Button Clicked");
+        alert("Button Clicked");
+      };
+    </script>
+  </body>
+</html>

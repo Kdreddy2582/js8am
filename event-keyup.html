@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input type="text" id="myname" onkeyup="myKeyup()" />-->
+    <input type="text" id="myname" onkeyup="myKeyup()" />
+    <h4>The name is: <span id="demo"></span></h4>
+    <script>
+      // function myKeyup() {
+      //   let name = document.getElementById("myname");
+      //   name.value = name.value.toUpperCase();
+      // }
+      function myKeyup() {
+        let name = document.getElementById("myname").value;
+        document.getElementById("demo").innerHTML = name;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Javascript OnmouseOver and OnmouseOut Events</h1>
+    <div onmousemove="over()" style="background-color: rgb(11, 38, 156);">
+      <h2>This is OnMouseOver event</h2>
+    </div>
+    <div onmouseout="out()" style="background-color: brown;">
+      <h2>This is OnMouseOut event</h2>
+    </div>
+    <script>
+      function over() {
+        document.write("This is OnMouseOver event");
+      }
+      function out() {
+        document.write("This is OnMouseOut event");
+      }
+    </script>
+  </body>
+</html>
