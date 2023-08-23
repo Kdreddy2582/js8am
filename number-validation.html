@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="accordion.html"
+      onsubmit="return  mobileValidate()"
+      name="myForm"
+      method="post"
+    >
+      <div>Phone No: <input type="number" name="mobileNumber" /></div>
+      <div>
+        <input type="submit" value="Validate Phone No" />
+      </div>
+    </form>
+    <script>
+      function mobileValidate() {
+        var mobleNo = document.myForm.mobileNumber.value;
+        if (mobleNo.length == 10) {
+          return true;
+        } else {
+          alert("The mobile number must be 10 digit!");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
