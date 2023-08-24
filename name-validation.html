@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Name Validation</h1>
+    <form
+      action="index.html"
+      method="post"
+      name="myForm"
+      onsubmit="return validateName()"
+    >
+      <div><input type="text" name="fname" placeholder="Enter you name" /></div>
+      <br />
+      <div><input type="submit" value="Validate Name" /></div>
+    </form>
+    <script>
+      function validateName() {
+        var uname = document.myForm.fname.value;
+        if (uname == "null" || uname == "") {
+          alert("please provide current name");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

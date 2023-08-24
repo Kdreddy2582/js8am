@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Name Validation</h1>
+    <form
+      action="index.html"
+      method="post"
+      name="myForm"
+      onsubmit="return validateDate()"
+    >
+      <div>
+        <input type="date" name="dateval" placeholder="Date validation" />
+      </div>
+      <br />
+      <div><input type="submit" value="Validate Date" /></div>
+    </form>
+    <script>
+      function validateDate() {
+        var currentDate = new Date();
+        var dob = new Date(document.myForm.dateval.value);
+        if (dob > currentDate) {
+          alert("please enter valid DOB");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
