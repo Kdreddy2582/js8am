@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Spread Operator(...) -> It takes an iterable and expend  or seperate an elemnt of iterables
+      var arr1 = [25, 35, 38, 56];
+      // console.log(arr1);
+      // console.log(...arr1);
+
+      // var arr2 = [5, 6, 8, ...arr1];
+      // console.log(arr2);
+
+      // var s1 = "Front Development";
+      // console.log(s1);
+      // console.log(...s1);
+
+      var arr3 = [1, 2, 3, 4, 5];
+      //var arr4 = [6, 7, 8, 9, 10];
+      //var arr5 = [...arr3, ...arr4];
+      // var arr5 = [...arr3, 45, 35, 22, ...arr4, 101, 105, 200];
+      // console.log(arr5);
+
+      // function add(a, b, c, d, e) {
+      //   console.log(a + b + c + d + e);
+      // }
+      // add(...arr3);
+
+      var s2 = ["Hyderabad", "Vizag", "Srikakulam", "Guntur", "Tirupati"];
+      function add1(a, b, c, d, e) {
+        console.log(a + " " + b + " " + c + " " + d + " " + e + " " + "Hello");
+      }
+      add1(...s2);
+    </script>
+  </body>
+</html>
