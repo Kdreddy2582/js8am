@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring in Javascriprt</title>
+  </head>
+  <body>
+    <h1>Destructuring in Javascriprt</h1>
+    <script>
+      // Array destructuring in javascript
+      let arr = [100, 200, 300, 400];
+      // let a = arr[0];
+      // let b = arr[1];
+      // let c = arr[2];
+      // let d = arr[3];
+      //console.log(a);
+
+      // let [a, b, c, d] = arr;
+      // let [a, , ...c] = arr;
+      // console.log(a, c);
+
+      // Object destructuring in javascript
+      let person = {
+        name: "Deva",
+        age: 40,
+        address: {
+          //nested object
+          city: "Vizag",
+          state: "Andhra Pradesh",
+        },
+      };
+      //console.log(persion.name);
+      //console.log(persion.address.city);
+      let {
+        name = nam,
+        age,
+        address: { city },
+      } = person;
+      //console.log(name, age, city);
+      console.log(nam, age, city);
+    </script>
+  </body>
+</html>
